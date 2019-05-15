@@ -1,10 +1,10 @@
 TARGET=shell
 
-$(TARGET): fig1_10.o error.o
+$(TARGET): shell.o error.o
 	$(CC) -o $@ $^ 
 
-fig1_10.o: fig1_10.c
+shell.o: shell.c
 error.o: error.c
 
 clean:
-	rm -f fig1_10.o error.o $(TARGET)
+	rm -f shell.o error.o $(TARGET)
